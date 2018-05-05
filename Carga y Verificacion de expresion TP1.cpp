@@ -163,10 +163,10 @@ bool Pila::expresionEsCorrecta(){//se fija que todos los pareentesis esten cerra
      for(int i=0;(i<expresion.length())&&(!error);i++){
           if (expresion.at(i)=='(') p->apilar('(');
           if (expresion.at(i)==')'){
-                                 if (p->pilavacia()) error=1;
-                                 else
-                                     if(p->tope()!='(') error=1;
-                                     else p->desapilar();                     
+            if (p->pilavacia()) error=1;
+            else
+            if(p->tope()!='(') error=1;
+            else p->desapilar();                     
           }         
 } 
     if((!error)&&p->pilavacia())return true;
