@@ -171,12 +171,7 @@ bool Pila::expresionEsCorrecta(){//se fija que todos los pareentesis esten cerra
                                      if(p->tope()!='{') error=1;
                                      else p->desapilar();                     
           }                               
-          if (expresion.at(i)==']'){
-                                 if (p->pilavacia()) error=1;
-                                 else
-                                     if(p->tope()!='[') error=1;
-                                     else p->desapilar();                     
-          }                               
+                            
           if (expresion.at(i)==')'){
                                  if (p->pilavacia()) error=1;
                                  else
