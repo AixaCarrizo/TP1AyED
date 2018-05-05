@@ -9,7 +9,7 @@ class Pila:public Lista{
              bool pilavacia(){return esvacia();};
              bool expresionEsCorrecta();
              void cargarExpresion();
-             string returnExpresion();
+             string returnExpresion(){return expresion;};
 };                  
 void Pila::cargarExpresion(){
 	Pila *p=new Pila();
