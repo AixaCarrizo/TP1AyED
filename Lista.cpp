@@ -10,7 +10,7 @@ class Nodo{
             Nodo *next;
     public:
            Nodo() {next=NULL;}; //constructor del nodo que se crea cuando se crea la lista, hace que next apunte a null
-           Nodo(int a) {dato=a; next=NULL;}; //este constructor se utiliza al añadir elementos, recibe el elemento a añadir y al nodo que crea le setea dato en dicho elemento y next en null
+           Nodo(int a) {dato=a; next=NULL;}; //este constructor se utiliza al aÃ±adir elementos, recibe el elemento a aÃ±adir y al nodo que crea le setea dato en dicho elemento y next en null
            void set_dato(int a) {dato=a; };
            void set_next(Nodo *n) {next=n; }; //recibe la direccion a la que apunta czo y la guarda en el next de nuevo
            int get_dato() {return dato; }; //devuelve el parametro dato del nodo desde que se llamo a este metodo
@@ -22,7 +22,7 @@ class Lista{
     private:
             Nodo *czo;
     public:
-            Lista() {czo=new Nodo();}; //constructor para la creacion de la lista por primera vez, crea un nodo llamado czo y le reserva en memoria el tamaño de un nodo
+            Lista() {czo=new Nodo();}; //constructor para la creacion de la lista por primera vez, crea un nodo llamado czo y le reserva en memoria el tamaÃ±o de un nodo
             Lista(Nodo *n) {czo=n;};
             //~Lista(void);
             void add(int d); //agrega un elemento a la lista
@@ -95,9 +95,9 @@ int Lista::suma(int i)
 
 int main()
 {
-    Lista *l=new Lista(); //crea un puntero a lista l, y le asigna en memoria el tamaño de una lista
-    Lista *r=new Lista(); //crea un puntero a lista r, y le asigna en memoria el tamaño de una lista
-    Lista *l2=new Lista(); //crea un puntero a lista 12, y le asigna en memoria el tamaño de una lista
+    Lista *l=new Lista(); //crea un puntero a lista l, y le asigna en memoria el tamaÃ±o de una lista
+    Lista *r=new Lista(); //crea un puntero a lista r, y le asigna en memoria el tamaÃ±o de una lista
+    Lista *l2=new Lista(); //crea un puntero a lista 12, y le asigna en memoria el tamaÃ±o de una lista
     l->add(11);
     l->add(22);
     l->add(33);
